@@ -1,7 +1,7 @@
 import asyncio
 from pytgcalls import idle
-from Trickyabhi.Abhishek import SUPPORT
-from Trickyabhi.main import call_py, bot, user as Herox
+from TrickyAbhi.Abhishek import SUPPORT
+from TrickyAbhi.main import call_py, bot, user as Herox
 
 async def start_bot():
     print("[INFO]: STARTING BOT CLIENT")
