@@ -11,8 +11,10 @@
 
   
 # TrickyAbhi-Music
-omfo 12th boards // neet // jee main
-
+OMFO Gimme a start and follow me 
+  
+  
+  
 ### Noob Developers 
 <a href="https://t.me/herox_xd"><img src="https://img.shields.io/badge/Noob%20 Herox-ReD.svg?style=for-the-badge&logo=Python"></a>
 ## Support & Updates 
