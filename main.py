@@ -7,7 +7,7 @@ bot = Client(
     API_ID,
     API_HASH,
     bot_token=BOT_TOKEN,
-    plugins={"root": "HellMusic.Player"},
+    plugins={"root": "Herox"},
 )
 
 user = Client(
