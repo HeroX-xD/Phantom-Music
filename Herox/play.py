@@ -11,13 +11,13 @@ import aiofiles
 import aiohttp
 import ffmpeg
 import requests
-from Process.fonts import CHAT_TITLE
+from SJM.fonts import CHAT_TITLE
 from PIL import Image, ImageDraw, ImageFont
 from Config import ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2, IMG_5
-from Process.filters import command, other_filters
-from Process.queues import QUEUE, add_to_queue
-from ImageFont.main import call_py, user
-from Process.utils import bash
+from SJM.filters import command, other_filters
+from SJM.queues import QUEUE, add_to_queue
+from Trickyabhi.main import call_py, user
+from SJM.utils import bash
 from pyrogram import Client
 from pyrogram.errors import UserAlreadyParticipant, UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
@@ -97,7 +97,7 @@ async def generate_cover(thumbnail, title, userid, ctitle):
                 await f.write(await resp.read())
                 await f.close()
     image1 = Image.open(f"thumb{userid}.png")
-    image2 = Image.open("ImageFont/raichux.png")
+    image2 = Image.open("Trickyabhi/heroxmusic.png")
     image3 = changeImageSize(1280, 720, image1)
     image4 = changeImageSize(1280, 720, image2)
     image5 = image3.convert("RGBA")
@@ -105,8 +105,8 @@ async def generate_cover(thumbnail, title, userid, ctitle):
     Image.alpha_composite(image5, image6).save(f"temp{userid}.png")
     img = Image.open(f"temp{userid}.png")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("ImageFont/finalfont.ttf", 60)
-    font2 = ImageFont.truetype("ImageFont/finalfont.ttf", 70)     
+    font = ImageFont.truetype("Trickyabhi/finalfont.ttf", 60)
+    font2 = ImageFont.truetype("Trickyabhi/finalfont.ttf", 70)     
     draw.text((20, 45), f"{title[:30]}...", fill= "white", stroke_width = 1, stroke_fill="white", font=font2)
     draw.text((120, 595), f"Playing on: {ctitle[:20]}...", fill="white", stroke_width = 1, stroke_fill="white" ,font=font)
     img.save(f"final{userid}.png")
