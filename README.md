@@ -1,3 +1,10 @@
+<h1 align="center"><b>TrickyAbhi-Music</b></h1>
+
+# <p align="center"><a href="https://github.com/SJMxADITI/TrickyAbhi-Music"><img src="https://github-readme-stats.vercel.app/api/pin?username=Sjmxaditi&show_icons=true&theme=dracula&hide_border=true&repo=Trickyabhi-music"></a></p>
+<p align="center">
+
+  
+  
 # TrickyAbhi-Music
 omfo 12th boards // neet // jee main
 
