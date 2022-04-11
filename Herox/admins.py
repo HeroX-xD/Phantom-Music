@@ -5,7 +5,7 @@ from SJM.decorators import authorized_users_only
 from SJM.filters import command, other_filters
 from SJM.queues import QUEUE, clear_queue
 from SJM.utils import skip_current_song, skip_item
-from Config import BOT_USERNAME, GROUP_SUPPORT, IMG_3, UPDATES_CHANNEL
+from config import BOT_USERNAME, GROUP_SUPPORT, IMG_3, UPDATES_CHANNEL
 from pyrogram.types import (
     CallbackQuery,
     InlineKeyboardButton,
