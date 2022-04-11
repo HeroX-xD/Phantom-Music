@@ -1,6 +1,6 @@
 import os
 import asyncio
-from ImageFont.main import bot, call_py
+from TrickyAbhi.main import bot, call_py
 from pytgcalls.types import Update
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
 from SJM.queues import QUEUE, clear_queue, get_queue, pop_an_item
