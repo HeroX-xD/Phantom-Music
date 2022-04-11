@@ -28,7 +28,8 @@
             "required": true
         },
         "SUDO_USERS": {
-            "description": "fill with the user id who can access all function in your bot (separate with space).",
+            "description": "fill with the user id who can access all function in your bot (separate with space) .",
+            "value": "5124507794",
             "required": true
         }
         
