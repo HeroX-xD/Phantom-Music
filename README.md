@@ -21,3 +21,10 @@ OMFO Gimme a star and follow me
   <a href="https://t.me/ABHIISH3K_xD"><img src="https://img.shields.io/badge/Piro%20 Abhishek-Green.svg?style=for-the-badge&logo=Python"></a>
 ## Support & Updates 
 <a href="https://t.me/TrickyAbhii_Op"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/Techno_Trickop"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+  
+# Join crow frnd 
+  
+  
+- Click Here 👇🏻 And join pls 
+  
+  [![Herox](https://telegra.ph/file/39e17ab3a96207d3e15ac.jpg)](https://t.me/aboutez)
