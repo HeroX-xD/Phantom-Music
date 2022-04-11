@@ -1,7 +1,7 @@
 from SJM.queues import QUEUE
 from pyrogram import Client, filters
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
-from Config import (
+from config import (
     ASSISTANT_NAME,
     BOT_NAME,
     BOT_USERNAME,
