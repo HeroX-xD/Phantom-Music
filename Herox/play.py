@@ -1,3 +1,5 @@
+# TrickyAbhi Created by Herox
+
 import io
 from os import path
 from typing import Callable
