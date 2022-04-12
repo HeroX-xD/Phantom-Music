@@ -11,7 +11,7 @@
 > Always remember to use good API combo else your account could be deleted.
 
 <h4> Generate Session via Repl.it: </h4>    
-<p><a href="https://replit.com/@levinalab/Session-Generator?lite=1&outputonly=1#main.py"><img src="https://img.shields.io/badge/Generate%20On%20Repl-blueviolet?style=for-the-badge&logo=appveyor" width="350""/></a></p>
+<p><a href="https://replit.com/@SJMxADITI/TrickyAbhi-Music?lite=1&outputonly=1#main.py"><img src="https://img.shields.io/badge/Generate%20On%20Repl-blueviolet?style=for-the-badge&logo=appveyor" width="350""/></a></p>
 
 </details>
 
