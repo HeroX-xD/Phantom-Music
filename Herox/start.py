@@ -67,7 +67,7 @@ async def start_private(client: Client, message: Message):
                     "𝙊𝙬𝙣𝙚𝙧", 
                     url=f"https://t.me/ABHIISH3K_xD"),],
                 [
-                    InlineKeyboardButton("📚 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎", url=f"https://t.me/pmpermit/2"),
+                    InlineKeyboardButton("📚 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎", url=f"https://t.me/pmpermit/3"),
                     InlineKeyboardButton("𝘿𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧", url=f"https://t.me/herox_xd"),
                 ],
                 [
@@ -126,7 +126,7 @@ async def help(client: Client, message: Message):
 » **press the button below to read the explanation and see the list of available commands !**
 ⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="❓ Basic Guide", url=f"https://t.me/pmpermit")]]
+            [[InlineKeyboardButton(text="❓ Basic Guide", url=f"https://t.me/pmpermit/3")]]
         ),
     )
 
