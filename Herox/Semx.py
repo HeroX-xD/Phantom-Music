@@ -3,7 +3,7 @@ from pyrogram import Client
 from config import BOT_USERNAME
 from SJM.filters import command
 
-@Client.on_message(command(["asupan", f"asupan@{BOT_USERNAME}"]))
+@Client.on_message(command(["abhi", f"abhi@{BOT_USERNAME}"]))
 async def asupan(client, message):
     try:
         resp = requests.get("https://api-tede.herokuapp.com/api/asupan/ptl").json()
@@ -13,7 +13,7 @@ async def asupan(client, message):
         await message.reply_text("`Something went wrong LOL...`")
 
 
-@Client.on_message(command(["wibu", f"wibu@{BOT_USERNAME}"]))
+@Client.on_message(command(["sjm", f"sjm@{BOT_USERNAME}"]))
 async def wibu(client, message):
     try:
         resp = requests.get("https://api-tede.herokuapp.com/api/asupan/wibu").json()
@@ -23,7 +23,7 @@ async def wibu(client, message):
         await message.reply_text("`Something went wrong LOL...`")
 
 
-@Client.on_message(command(["chika", f"chika@{BOT_USERNAME}"]))
+@Client.on_message(command(["tricky", f"tricky@{BOT_USERNAME}"]))
 async def chika(client, message):
     try:
         resp = requests.get("https://api-tede.herokuapp.com/api/chika").json()
