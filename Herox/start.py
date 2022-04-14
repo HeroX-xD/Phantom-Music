@@ -51,10 +51,10 @@ async def _human_time_duration(seconds):
 )
 async def start_private(client: Client, message: Message):
     await message.reply_text(
-        f"""✨ **ᴡᴇʟᴄᴏᴍᴇ {message.from_user.mention()} !**\n
- **ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄᴀʟʟ [!](https://telegra.ph/file/efb55cb8e4fe3ff5507bd.jpg)**
+        f""" [✨](https://telegra.ph/file/efb55cb8e4fe3ff5507bd.jpg) **ᴡᴇʟᴄᴏᴍᴇ {message.from_user.mention()} !**\n
+ **ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄᴀʟʟ !!**
  **ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ 💫**
- **ғᴏʀ ᴀɴʏ ʜᴇʟᴘ ᴊᴏɪɴ @Techno_Trickop , ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ @Herox_xD** `{delta_ping * 1000:.3f} ms`, `{uptime}`""",
+ **ғᴏʀ ᴀɴʏ ʜᴇʟᴘ ᴊᴏɪɴ @Techno_Trickop , ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ @Herox_xD**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
