@@ -18,6 +18,10 @@
             "description": "fill with your bot token from @BotFather",
             "required": true
         },
+        "BOT_USERNAME": {
+            "description": "fill with your bot username from @BotFather Note put without '@' ",
+            "required": true
+        },
         
         "API_ID": {
             "description": "your Api ID from my.telegram.org/apps",
