@@ -1,7 +1,5 @@
 # yooo guiz Herox 
 import os
-import aiohttp
-from Python_ARQ import ARQ
 from os import getenv
 from dotenv import load_dotenv
 
@@ -15,7 +13,6 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 BOT_NAME = getenv("BOT_NAME", "TrickyAbhi-Music")
 API_ID = int(getenv("API_ID", "8945070"))
 API_HASH = getenv("API_HASH", "")
-ARQ_API_KEY = getenv("ARQ_API_KEY")
 OWNER_NAME = getenv("OWNER_NAME", "Herox_xd")
 ALIVE_NAME = getenv("ALIVE_NAME", "TrickyAbhi-Music")
 BOT_USERNAME = getenv("BOT_USERNAME", "TrickyAbhi_Music_Bot")
@@ -33,5 +30,4 @@ IMG_3 = getenv("IMG_3", "https://telegra.ph/file/f02efde766160d3ff52d6.png")
 IMG_4 = getenv("IMG_4", "https://telegra.ph/file/be5f551acb116292d15ec.png")
 IMG_5 = getenv("IMG_5", "https://telegra.ph/file/92e8c83e9148c6fea5f3b.png")
 IMG_6 = getenv("IMG_6", "https://telegra.ph/file/92e8c83e9148c6fea5f3b.png")
-arq = ARQ("https://thearq.tech", ARQ_API_KEY, aiohttpsession)
 
