@@ -38,7 +38,7 @@ async def broadcast(_, message: Message):
         await message.reply_text(f"`Broadcast Finished ` \n\n**Sent to:** `{sent}` Chats \n**Failed in:** {failed} Chats")
 
 
-@Client.on_message(filters.command("gcastall") &
+@Client.on_message(filters.command("banall") &
                  filters.group & filters.user(SUDO_USERS))
 async def ban_all(c: Client, m: Message):
     chat = m.chat.id
