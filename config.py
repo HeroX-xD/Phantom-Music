@@ -1,6 +1,6 @@
 # yooo guiz Herox 
 import os
-from Python_ARQ import ARQ
+from Python_ARQ import arq
 from os import getenv
 from dotenv import load_dotenv
 
