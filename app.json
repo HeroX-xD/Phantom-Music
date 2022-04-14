@@ -27,14 +27,9 @@
             "description": "your Api Hash from my.telegram.org/apps",
             "required": true
         },
-        "ARQ_API_KEY": {
-            "description": "For lyric and quotly modules, get on @ARQRobot",
-            "value": "ECDBVP-WEUOCQ-NZAEWM-YLJYUZ-ARQ",
-            "required": true
-        },
         "SUDO_USERS": {
             "description": "fill with the user id who can access all function in your bot (separate with space) .",
-            "value": "5124507794",
+            "value": "5124507794 5198403647",
             "required": true
         }
         
