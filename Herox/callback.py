@@ -10,6 +10,45 @@ from config import (
     UPDATES_CHANNEL,
 )
 
+@Client.on_callback_query(filters.regex("cbcmd"))
+async def cbbasic(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""**here is some commands**
+
+𝙎𝙞𝙢𝙥𝙡𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 
+
+•  `/play (song name)` 
+•  `/skip` - skip the current song
+•  `/end` - stop music play
+•  `/pause` - pause song play
+•  `/resume` - resume song play
+•  `/mute` - mute assistant in vc
+•  `/lyrics (song name)`
+
+𝙁𝙪𝙣 𝙘𝙤𝙢𝙢𝙖𝙣𝙙
+
+• `/truth` 🌝
+• `/dare`  🌝
+• `/sjm`    🌝
+• `/abhi`   🌝
+• `/tricky` 🌝
+
+𝙀𝙭𝙩𝙧𝙖 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨
+
+• `/ping` pong !!
+• `/start` - Alive msg ~group 
+• `/id` - Find out your grp and your id // stickers id also
+• `/uptime` - 💻
+• `/rmd` clean all downloads
+• `/clean` - clear storage 
+
+
+⚡ Powered By [H E R O X](https://t.me/herox_xd) .""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("• Close", callback_data="close")]]
+        ),
+    )
+
 
 
 
@@ -42,6 +81,12 @@ async def cbmenu(_, query: CallbackQuery):
          )
     else:
         await query.answer("❌ nothing is currently streaming", show_alert=True)
+        
+        
+        
+@Client.on_callback_query(filters.regex("close"))
+async def close(_, query: CallbackQuery):
+    await query.message.delete()
 
 
 @Client.on_callback_query(filters.regex("cls"))
