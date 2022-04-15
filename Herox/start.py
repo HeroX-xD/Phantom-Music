@@ -67,7 +67,7 @@ async def start_private(client: Client, message: Message):
                     "𝙊𝙬𝙣𝙚𝙧", 
                     url=f"https://t.me/ABHIISH3K_xD"),],
                 [
-                    InlineKeyboardButton("📚 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎", url=f"https://t.me/pmpermit/3"),
+                    InlineKeyboardButton("📚 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎",  callback_data="cbcmd"),
                     InlineKeyboardButton("𝘿𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧", url=f"https://t.me/herox_xd"),
                 ],
                 [
