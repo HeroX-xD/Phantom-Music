@@ -4,10 +4,10 @@ ffmpeg-python
 py-tgcalls
 git+https://github.com/pyrogram/pyrogram@master
 youtube-search-python
-yt-dlp
 speedtest-cli
 youtube-dl
 youtube-search
+yt-dlp
 python-dotenv
 dnspython
 gitpython
@@ -20,5 +20,4 @@ psutil
 future
 wget
 lyricsgenius
-yt-dlp==2021.11.10.1
 skem
