@@ -11,10 +11,10 @@ from config import (
 )
 
 
-@Client.on_callback_query(filters.regex("cbback"))
-async def cbback(_, query: CallbackQuery):
+@Client.on_callback_query(filters.regex("cb_start"))
+async def start_op(_, query: CallbackQuery):
         await query.edit_message_text(
-              f"""ʜᴇʟʟᴏ [✨]({START_PIC}) **ᴡᴇʟᴄᴏᴍᴇ {message.from_user.mention()} !**\n
+              f"""ʜᴇʟʟᴏ [✨]({START_PIC}) **ᴡᴇʟᴄᴏᴍᴇ [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
  **ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄᴀʟʟ !!**
  **ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ 💫**
  **ғᴏʀ ᴀɴʏ ʜᴇʟᴘ ᴊᴏɪɴ @Techno_Trickop**""",
@@ -22,23 +22,23 @@ async def cbback(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "⛓ Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ Gʀᴏᴜᴘ",
+                        "⛓ Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ Gʀᴏᴜᴘ ⛓",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("• Cᴏᴍᴍᴀɴᴅs ",  callback_data="cbcmd"),],
+                [InlineKeyboardButton("• Cᴏᴍᴍᴀɴᴅs •",  callback_data="cb_cmd"),],
                 [
                     InlineKeyboardButton(
-                    "• Oᴡɴᴇʀ ", 
+                    "• Oᴡɴᴇʀ •", 
                     url=f"https://t.me/{OWNER_NAME}"),
                     InlineKeyboardButton("• Dᴇᴠᴇʟᴏᴘᴇʀ ", url=f"https://t.me/herox_xd"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "• Sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "• Sᴜᴘᴘᴏʀᴛ •", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "• Uᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "• Uᴘᴅᴀᴛᴇs •", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
@@ -51,7 +51,7 @@ async def cbback(_, query: CallbackQuery):
     )
 
 
-@Client.on_callback_query(filters.regex("cbcmd"))
+@Client.on_callback_query(filters.regex("cb_cmd"))
 async def cbcmd(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""**here is some commands**
@@ -86,7 +86,7 @@ async def cbcmd(_, query: CallbackQuery):
 
 ⚡ Powered By [H E R O X](https://t.me/herox_xd) .""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("• ʙᴀᴄᴋ", callback_data="cbback")]]
+            [[InlineKeyboardButton("• ʙᴀᴄᴋ", callback_data="cb_start")]]
         ),
     )
 
