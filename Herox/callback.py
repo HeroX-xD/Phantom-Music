@@ -8,6 +8,7 @@ from config import (
     GROUP_SUPPORT,
     OWNER_NAME,
     UPDATES_CHANNEL,
+    START_PIC,
 )
 
 
