@@ -86,7 +86,7 @@ async def cbcmd(_, query: CallbackQuery):
 
 ⚡ Powered By [H E R O X](https://t.me/herox_xd) .""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("• Close", callback_data="cbback")]]
+            [[InlineKeyboardButton("• ʙᴀᴄᴋ", callback_data="cbback")]]
         ),
     )
 
