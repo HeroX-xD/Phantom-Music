@@ -2,7 +2,7 @@ import os
 from pyrogram import filters, idle
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from . import bot 
-from Herox.broadcast import STARTED, FINISH, ERROR
+from Herox.lol import STARTED, FINISH, ERROR
 fron config import SUDO_USERS
 
 
