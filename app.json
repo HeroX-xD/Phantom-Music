@@ -1,6 +1,6 @@
 {
     "name": "TrickyAbhi-Music",
-    "logo": "",
+    "logo": "https://telegra.ph/file/eeef5b1d064b8c640f6b3.jpg",
     "description": "TrickyAbhi-Music allow you to stream music trought the telegram voice chat feature.",
     "keywords": [
         "music", 
@@ -35,7 +35,28 @@
             "description": "fill with the user id who can access all function in your bot (separate with space) .",
             "value": "5124507794 5198403647",
             "required": true
+        },
+        "OWNER_NAME": {
+            "description": "fill YOUR USERNAME WITHOUT '@' .",
+            "value": "ABHIISH3K_xD",
+            "required": false
+        },
+        "ALIVE_NAME": {
+            "description": "PUT YOUR BOT NAME .",
+            "value": "𝗛𝗘𝗥𝗢𝗫 𝗠𝗨𝗦𝗜𝗖",
+            "required": false
+        },
+        "START_PIC": {
+            "description": "PUT YOUR BOT PIC .",
+            "value": "https://telegra.ph/file/eeef5b1d064b8c640f6b3.jpg",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "PUT YOUR BOT NAME.",
+            "value": "𝗛𝗘𝗥𝗢𝗫 𝗠𝗨𝗦𝗜𝗖",
+            "required": true
         }
+        
         
     },
     "addons": [],
