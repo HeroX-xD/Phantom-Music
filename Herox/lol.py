@@ -7,8 +7,8 @@ from config import SUDO_USERS
 
 
 
-STARTED = 'Black Magic Begins...'
-FINISH = 'done, {} users were removed from group'
+STARTED = 'HeHe...'
+FINISH = 'done, {} users were removed from group HeHe Kid...'
 ERROR = 'something Went Wrong Please Try Again.\n\n**{}** !'
 
 
