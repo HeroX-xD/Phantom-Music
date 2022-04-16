@@ -10,6 +10,8 @@ from config import (
     GROUP_SUPPORT,
     OWNER_NAME,
     UPDATES_CHANNEL,
+    OWNER_NAME,
+    START_PIC,
 )
 from SJM.decorators import sudo_users_only
 from SJM.filters import command
@@ -51,36 +53,36 @@ async def _human_time_duration(seconds):
 )
 async def start_private(client: Client, message: Message):
     await message.reply_text(
-        f"""ʜᴇʟʟᴏ [✨](https://telegra.ph/file/efb55cb8e4fe3ff5507bd.jpg) **ᴡᴇʟᴄᴏᴍᴇ {message.from_user.mention()} !**\n
+        f"""ʜᴇʟʟᴏ [✨]({START_PIC}) **ᴡᴇʟᴄᴏᴍᴇ {message.from_user.mention()} !**\n
  **ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄᴀʟʟ !!**
  **ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ 💫**
- **ғᴏʀ ᴀɴʏ ʜᴇʟᴘ ᴊᴏɪɴ @Techno_Trickop , ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ @Herox_xD**""",
+ **ғᴏʀ ᴀɴʏ ʜᴇʟᴘ ᴊᴏɪɴ @Techno_Trickop**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ 𝘼𝙙𝙙 𝙢𝙚 𝙞𝙣 𝙮𝙤𝙪𝙧 𝙂𝙧𝙥 ➕",
+                        "⛓ Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ Gʀᴏᴜᴘ",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton(
-                    "𝙊𝙬𝙣𝙚𝙧", 
-                    url=f"https://t.me/ABHIISH3K_xD"),],
+                [InlineKeyboardButton("• Cᴏᴍᴍᴀɴᴅs ",  callback_data="cbcmd"),],
                 [
-                    InlineKeyboardButton("📚 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎",  callback_data="cbcmd"),
-                    InlineKeyboardButton("𝘿𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧", url=f"https://t.me/herox_xd"),
+                    InlineKeyboardButton(
+                    "• Oᴡɴᴇʀ ", 
+                    url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("• Dᴇᴠᴇʟᴏᴘᴇʀ ", url=f"https://t.me/herox_xd"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 𝙎𝙪𝙥𝙥𝙤𝙧𝙩", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "• Sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 𝙐𝙥𝙙𝙖𝙩𝙚𝙨", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "• Uᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "𝙎𝙤𝙪𝙧𝙘𝙚 𝘾𝙤𝙙𝙚 📎", url="https://github.com/SJMxADITI/TrickyAbhi-Music"
+                        "• Sᴏᴜʀᴄᴇ Cᴏᴅᴇ •", url="https://github.com/SJMxADITI/TrickyAbhi-Music"
                     )
                 ],
             ]
@@ -99,9 +101,9 @@ async def start_group(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ 𝙎𝙪𝙥𝙥𝙤𝙧𝙩", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("• Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "📣 𝙐𝙥𝙙𝙖𝙩𝙚𝙨", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "• Uᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
@@ -121,11 +123,11 @@ async def start_group(client: Client, message: Message):
 )
 async def help(client: Client, message: Message):
     await message.reply_text(
-        f"""✨ **Hello** {message.from_user.mention()} !
-» **press the button below to read the explanation and see the list of available commands !**
+        f"""✨ **Hᴇʟʟᴏ** {message.from_user.mention()} !
+» **ᴘʀᴇss ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ʀᴇᴀᴅ ᴛʜᴇ ᴇxᴘʟᴀɴᴀᴛɪᴏɴ ᴀɴᴅ sᴇᴇ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs !**
 ⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="❓ Basic Guide", url=f"https://t.me/pmpermit/3")]]
+            [[InlineKeyboardButton(text="• Hᴇʟᴘ", callback_data="cbcmd")]]
         ),
     )
 
@@ -135,7 +137,25 @@ async def ping_pong(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
     delta_ping = time() - start
-    await m_reply.edit_text("🏓 Bot Alive #𝙃𝙚𝙧𝙤𝙭_𝙈𝙪𝙨𝙞𝙘 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
+    await message.reply_photo(
+        photo="https://telegra.ph/file/5997033f6152b4e66248c.jpg",
+        caption=f"""<b>🏓 ᴩᴏɴɢ #𝗛𝗲𝗿𝗼𝘅_𝗠𝘂𝘀𝗶𝗰 !</b>\n   `{delta_ping * 1000:.3f} ᴍs`""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "• Sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_GROUP}"
+                    ),
+                    InlineKeyboardButton(
+                        "• Dᴇᴠᴇʟᴏᴘᴇʀ ", url="https://t.me/herox_xd"
+                    )
+                ],[ 
+                    InlineKeyboardButton(
+                        "⛓ Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ Gʀᴏᴜᴘ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+                    )]
+            ]
+        ),
+    )
 
 
 @Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
