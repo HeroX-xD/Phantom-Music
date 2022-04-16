@@ -144,7 +144,7 @@ async def ping_pong(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "• Sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "• Sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
                         "• Dᴇᴠᴇʟᴏᴘᴇʀ ", url="https://t.me/herox_xd"
